@@ -18,7 +18,9 @@ type Post = {
     posts && (
       <ul>
         {posts.data.map((post: Post) => (
-          <li>{post.title}</li>
+          <li>
+            <a href={`/news/${post.id}`}>{post.title}</a>
+          </li>
         ))}
       </ul>
     )
